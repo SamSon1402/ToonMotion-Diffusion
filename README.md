@@ -269,7 +269,7 @@ This is a research prototype. In a production setting, the next steps would be:
 
 **Sameer M** — Deep Learning Engineer, Paris
 
-Built as a research demo for the Deep Learning Research Scientist position at [Animaj](https://www.animaj.com), the next-generation kids' media company behind Pocoyo, Maya the Bee, and 22 billion annual YouTube views.
+
 
 [LinkedIn](https://linkedin.com/in/sameer-m-b73376167) · [GitHub](https://github.com/SamSon1402)
 
