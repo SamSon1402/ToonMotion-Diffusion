@@ -1,0 +1,29 @@
+# Pocoyo-specific configuration
+
+character:
+  name: Pocoyo
+  id: 0
+  description: "Big head, small body, snappy exaggerated movement"
+  style: snappy
+
+  head_body_ratio: 0.67
+  limb_scale: 0.6
+
+  joint_limits:
+    head_rotation: [-45, 45]
+    spine_bend: [-30, 30]
+    shoulder_range: [-120, 120]
+    elbow_range: [0, 150]
+    hip_range: [-90, 90]
+    knee_range: [0, 130]
+
+  motion_style:
+    snap_factor: 0.85
+    overshoot: 0.15
+    settle_frames: 3
+    anticipation: 0.2
+
+data:
+  source: "data/raw/pocoyo_seasons_1_4"
+  episodes: 298
+  total_frames: 770000

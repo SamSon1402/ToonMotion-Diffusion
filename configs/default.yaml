@@ -1,0 +1,56 @@
+# ToonMotion-Diffusion Default Configuration
+
+model:
+  num_joints: 18
+  joint_dim: 3
+  motion_dim: 54
+  seq_len: 120
+  d_model: 512
+  nhead: 8
+  num_layers: 8
+  dim_feedforward: 2048
+  dropout: 0.1
+  clip_dim: 512
+  num_characters: 4
+  adapter_dim: 256
+
+diffusion:
+  num_steps: 1000
+  beta_start: 1.0e-4
+  beta_end: 0.02
+  inference_steps: 50
+
+training:
+  batch_size: 64
+  learning_rate: 1.0e-4
+  weight_decay: 0.01
+  num_epochs: 500
+  ema_decay: 0.999
+  grad_clip: 1.0
+  warmup_steps: 1000
+  save_every: 50
+  eval_every: 25
+  log_every: 10
+
+loss_weights:
+  noise: 1.0
+  joint_limit: 0.01
+  smoothness: 0.001
+  penetration: 0.005
+
+inference:
+  guidance_scale: 7.5
+  use_ddim: true
+  eta: 0.0
+
+data:
+  fps: 24
+  train_split: 0.9
+  val_split: 0.1
+  augment: true
+
+paths:
+  data_dir: data/processed
+  checkpoint_dir: checkpoints
+  output_dir: outputs
+  log_dir: logs
